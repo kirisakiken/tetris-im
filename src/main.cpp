@@ -1,18 +1,28 @@
 #include <raylib.h>
 
-const int WINDOW_WIDTH = 300;
-const int WINDOW_HEIGHT = 600;
+#include "common.hpp"
+#include "game.hpp"
 
 int main() {
   SetTargetFPS(60);
   InitWindow(WINDOW_WIDTH, WINDOW_HEIGHT, "Tetris Im!");
 
+  Game game = Game();
+
   while (!WindowShouldClose()) {
+    // -- Logical Ops
+
+    game.HandleInput();
     
+    if (shouldTrigger(updateRate)) {
+      game.Update();
+    }
+
     // -- Drawing
     BeginDrawing();
-    ClearBackground(DARKBLUE);
+    ClearBackground(lightBlue);
 
+    game.Draw();
 
     EndDrawing();
     // -- EndDrawing
