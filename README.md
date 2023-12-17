@@ -1,6 +1,7 @@
+## Preview
+
+!["preview"]("/.docs/preview.png")
+
 ### Build & Run
 
-Execute;
-- `$ cmake .`
-- `$ make`
-- `$ ./tetris_im`
+`./clear_rebuild.sh`
