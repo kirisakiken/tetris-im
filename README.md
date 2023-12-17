@@ -1,6 +1,6 @@
 ## Preview
 
-!["preview"]("/.docs/preview.png")
+!["preview"]("https://github.com/kirisakiken/tetris-im/blob/master/.docs/preview.png")
 
 ### Build & Run
 
