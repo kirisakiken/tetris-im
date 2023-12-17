@@ -3,17 +3,7 @@ project(TetrisIm)
 
 set(CMAKE_CXX_STANDARD 23)
 
-file(GLOB SOURCES "src/*.cpp")
-
-include_directories(
-        /usr/local/include
-        /src
-)
-
-link_directories(
-        /usr/local/lib
-        /src
-)
+file(GLOB_RECURSE SOURCES "src/*.cpp")
 
 add_executable(tetris_im ${SOURCES})
 
